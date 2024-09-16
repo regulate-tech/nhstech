@@ -6,6 +6,10 @@ The NHS.UK website has a large number of repositories on Github covering a range
 
 [NHS.UK repositories](https://github.com/nhsuk)
 
+## NHS Digital
+
+(https://github.com/NHSDigital)
+
 ## NHS Connect
 
 There is code for some of the NHS connectivity functions and guidance on using the NHS Login on Github.
