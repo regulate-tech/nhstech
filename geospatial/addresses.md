@@ -8,7 +8,7 @@ There are several methods we can use to find the precise coordinates for address
 
 The UK Government has created a standard for more precise addressing by allocating a [Unique Property Reference Number](https://www.geoplace.co.uk/addresses-streets/location-data/the-uprn) (UPRN) to each property.
 
-The definitive method for finding a UPRN and precise coordinates for a property from an address is to use a service called AddressBase.
+The definitive method for finding a UPRN and precise coordinates for a property from an address is to use [a service called AddressBase](https://www.ordnancesurvey.co.uk/products/addressbase).
 
 The AddressBase service is provided by OrdnanceSurvey and offered as a charged-for product to anyone not in the public sector.
 
