@@ -1,5 +1,11 @@
 # Collection of repositories of useful data and code for mapping UK health and care services
 
+## NHS Data Model and Dictionary
+
+NHS Digital publishes a guide to the data model and dictionary used in the NHS.
+
+[NHS Data Model and Dictionary](https://digital.nhs.uk/services/nhs-data-model-and-dictionary-service)
+
 ## NHS.UK
 
 The NHS.UK website has a large number of repositories on Github covering a range of aspects of its service.
@@ -8,7 +14,7 @@ The NHS.UK website has a large number of repositories on Github covering a range
 
 ## NHS Digital
 
-[NHS Digital](https://github.com/NHSDigital)
+[NHS Digital repositories](https://github.com/NHSDigital)
 
 ## NHS Connect
 
