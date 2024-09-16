@@ -6,6 +6,12 @@ The NHS.UK website has a large number of repositories on Github covering a range
 
 [NHS.UK repositories](https://github.com/nhsuk)
 
+## NHS Connect
+
+There is code for some of the NHS connectivity functions and guidance on using the NHS Login on Github.
+
+[NHS Connect repositories](https://github.com/nhsconnect)
+
 ## Organisation Data Service
 
 There is a central directory of NHS organisations in England that is maintained by NHS Digital.
