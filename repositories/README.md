@@ -8,7 +8,7 @@ The NHS.UK website has a large number of repositories on Github covering a range
 
 ## NHS Digital
 
-(https://github.com/NHSDigital)
+[NHS Digital](https://github.com/NHSDigital)
 
 ## NHS Connect
 
