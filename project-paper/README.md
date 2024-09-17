@@ -12,6 +12,6 @@ There is site level data allowing for a more detailed analysis and we can cross-
 
 ## Usage
 
-The simplest way to explore the data is to make a copy of the notebook (nhstech_project_paper.ipynb) in Google Colab.
+The simplest way to explore the data is to make a copy of the notebook [nhstech_project_paper.ipynb](nhstech_project_paper.ipynb) in Google Colab.
 
 You can also make a local copy if you use Jupyter on your own machine or just copy out the Python code.
