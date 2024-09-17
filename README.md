@@ -11,7 +11,9 @@ There are a number of sources of data which will be described here along with an
 ## Setup
 
 ### Prerequisites
+
 Git for your platform - https://github.com/git-guides/install-git
+
 Python for your platform - https://www.python.org/downloads/
 
 ### Configuration
