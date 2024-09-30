@@ -84,7 +84,7 @@ java -jar saxon9he.jar -t -s:ods_base.xml -xsl:HSCOrgRefData_xmltocsv.xslt
 
 ## STEP 9 - find and use the extracted CSV files
 
-The output configuration is Windows-y and hardcoded in but still runs on a Linux system. We found the above command line created a directory in root called "'\\C:'" and the process created a subdirectory of this called "HSCOrgRefData" where all the CSV files were written.
+The output configuration is Windows-y and hardcoded in but still runs on a Linux system. We found the above command line created a directory in root called "'\\\\C:'" and the process created a subdirectory of this called "HSCOrgRefData" where all the CSV files were written.
 
 We can move all the CSV files to the directory where we want them for further processing and analysis and delete this oddly formatted output directory, eg "mv HSCOrgRefData /home/MY_USER_NAME"
 
