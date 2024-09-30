@@ -14,7 +14,7 @@ For more information on the various sources of data see [this document](ods.md)
 
 ## STEP 1 - register for the Technology Reference Update Distribution (TRUD) service
 
-You can do this here - (https://isd.digital.nhs.uk/trud/users/guest/filters/0/home)
+You can do this here - https://isd.digital.nhs.uk/trud/users/guest/filters/0/home
 
 ## STEP 2 - subscribe to the Organisation Data Service (ODS) downloads.
 
@@ -71,6 +71,8 @@ This Java file should run on any machine with a standard Java Runtime Environmen
 For convenience, we can put the XML file and the Java file into a single working directory, eg ods_xml_csv
 
 We drop our extracted master XML file into this, eg ods_base.xml, and a copy of the saxon9he.jar file.
+
+We also need to drop in an XML transformation file called HSCOrgRefData_xmltocsv.xslt that is found in the extracted "transform" ZIP file.
 
 Now we can run this from the command line where we have Java Runtime Environment installed for our platform (a quick check that JRE is available is to run "java -version" at the command line and this should return some info on your install.  If it fails then you should check how to install JRE on your device).
 
