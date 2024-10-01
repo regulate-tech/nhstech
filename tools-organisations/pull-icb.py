@@ -1,7 +1,7 @@
 # Find all the Integrated Care Board records in the Organisation_Details.csv file and write these to the file icb.csv
 # These are identified by having a RoleId of 'RO318' (NB 'O' is a letter) in linked Role_Details.csv records
 
-# USAGE: run this script in the directory where you have prepared the Organisation Directoru Service csv files.
+# USAGE: run this script in the directory where you have prepared the Organisation Directory Service csv files.
 
 
 import pandas as pd
