@@ -10,13 +10,17 @@ We are not running a real-time, operational system so periodic updates are fine 
 
 This document describes the process for obtaining an initial dataset of organisations who have records in a central repository.
 
+This is a manual process that will produce a local set of CSV files that are human-readable and can be analysed using common tools.
+
+There is also a nice automated process called CLODS - https://github.com/wardle/clods.git - in a language called [Clojure](https://clojure.org/) that builds a local server with ODS data you can query. 
+
 For more information on the various sources of data see [this document](ods.md)
 
-## STEP 1 - register for the Technology Reference Update Distribution (TRUD) service
+### STEP 1 - register for the Technology Reference Update Distribution (TRUD) service
 
 You can do this here - https://isd.digital.nhs.uk/trud/users/guest/filters/0/home
 
-## STEP 2 - subscribe to the Organisation Data Service (ODS) downloads.
+### STEP 2 - subscribe to the Organisation Data Service (ODS) downloads.
 
 Once you have a TRUD account you will see various datasets listed on the left side of the page including one labelled "Organisation Data Service and Spine Directory Service".
 
@@ -24,7 +28,7 @@ Clicking on this will take you to a page where you will see listed a dataset cal
 
 Click on this and you will see a list of inactive datasets with a "Subscribe" link above this.  Once you have subscribed then the datasets will become clickable. https://isd.digital.nhs.uk/trud/users/authenticated/filters/0/categories/5/items/341/releases
 
-## STEP 3 - download the master XML file
+### STEP 3 - download the master XML file
 
 The datasets are listed with the most recent at the top and have clickable links that will start the file download in your browser.  
 
@@ -32,7 +36,7 @@ The filename is in the format "hscorgrefdataxml_data_x.y.z_YYYYMMDD000001.zip" w
 
 This will fetch a ZIP file of around 34MB to your local machine.
 
-## STEP 4 - extract the master XML file
+### STEP 4 - extract the master XML file
 
 You can extract the contents of the downloaded ZIP file using whichever tool is handy for your local machine (most modern operating systems have some kind of UNZIP tool built in).
 
@@ -42,7 +46,7 @@ To build our baseline directory, we want to extract fullfile.zip into a suitable
 
 We might rename the file for convenience when running command line tools late, eg to ods_base.xml
 
-## STEP 5 - get the tools to pull data from the XML file into CSV files
+### STEP 5 - get the tools to pull data from the XML file into CSV files
 
 You can run routines with this large XML file if that is your preferred method and you have a suitably powerful machine.
 
@@ -66,7 +70,7 @@ There are two more layers of directory to get to the actual tool called "saxon" 
 
 This Java file should run on any machine with a standard Java Runtime Environment and we have tested it on Linux within a Chromebook.
 
-## STEP 6 - run the CSV file extraction process
+### STEP 6 - run the CSV file extraction process
 
 For convenience, we can put the XML file and the Java file into a single working directory, eg ods_xml_csv
 
@@ -82,7 +86,7 @@ This is a command line version that we found works at a Linux prompt on a Chrome
 
 java -jar saxon9he.jar -t -s:ods_base.xml -xsl:HSCOrgRefData_xmltocsv.xslt
 
-## STEP 9 - find and use the extracted CSV files
+### STEP 9 - find and use the extracted CSV files
 
 The output configuration is Windows-y and hardcoded in but still runs on a Linux system. We found the above command line created a directory in root called "'\\\\C:'" and the process created a subdirectory of this called "HSCOrgRefData" where all the CSV files were written.
 
