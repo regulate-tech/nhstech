@@ -1,22 +1,25 @@
-# NHSTech - Project Paper
+# NHSTech - Project Paperless
 
 ## Goal
 
-A set of tools to collect and analyse data on the use of paper-based medical records in the UK NHS.
+A set of notebooks to collect and analyse data on the cost of storing medical records in the UK NHS.
 
 ## Context
 
-There have been various initiatives to make the NHS 'paperless' over the years but paper medical records are still in widespread use.
 
-We can get a sense of the persistence of paper records by looking at the amounts NHS Trusts say they are spending on medical records storage in an annual estates return they are required to make.
+- The NHS has committed to replacing expensive paper records with lower-cost digital records several times, but often this has not happened.
+- We can get a sense of the persistence of such records by looking at the amounts NHS Trusts say they are spending on medical records storage in an annual estates return they are required to make.
+- All NHS Trusts have to complete an annual return for their estate costs which includes data on medical records costs - this is called [the ERIC return](https://digital.nhs.uk/data-and-information/publications/statistical/estates-returns-information-collection).
 
 ## Questions
 
-How much is being spent by each NHS Trust on handling paper health records?
-How is the expenditure on paper records changing over time?
-How does this look at individual site level?
-Can we correlate this expenditure with information about electronic health records?
-Is there any other information that helps explain the varying degrees of usage of paper records across Trusts?
+We want to know: 
+
+- How much is being spent by each NHS Trust on storing medical records?
+- How is the expenditure on changing over time?
+- How does this look at individual trust level?
+- Can we correlate this expenditure with information about electronic patient records?
+- Is there any other information that helps explain the varying cost of medical records across Trusts?
 
 ## Outputs
 
@@ -28,6 +31,6 @@ There is site level data allowing for a more detailed analysis and we can cross-
 
 ## Usage
 
-The simplest way to explore the data is to make a copy of the notebook [nhstech_project_paper.ipynb](nhstech_project_paper.ipynb) in Google Colab.
+The simplest way to explore the data is to run the notebooks.
 
-You can also make a local copy if you use Jupyter on your own machine or just copy out the Python code.
+You can also explore the interactive output via the `docs` directory.

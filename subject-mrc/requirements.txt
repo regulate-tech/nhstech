@@ -1,0 +1,6 @@
+chardet
+matplotlib
+numpy
+pandas
+requests
+
