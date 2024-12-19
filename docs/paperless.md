@@ -52,7 +52,7 @@ The data sources we use are as follows:
 
 1. [Medical records spending](https://digital.nhs.uk/data-and-information/publications/statistical/estates-returns-information-collection) - Official statistics from NHS Digital, the Estates Returns Information Collection. These are official statistics produced an annual return from NHS trusts covering their operational costs, including spending on medical records storage. 
 2. [Trust populations](https://www.eastsussexjsna.org.uk/resources/nhs-acute-hospital-trust-catchment-populations/) - Experimental statistics produced by the Office for Health Improvement and Disparities. These are modelled estimates of the catchment populations for hospital provider trusts in England.
-3. [Trust locations](https://www.odsdatasearchandexport.nhs.uk/) - Trust UPRNs from the NHS Organisation Data Service, mapped to locations via the [NHS Postcode Directory](https://www.datadictionary.nhs.uk/supporting_information/nhs_postcode_directory.html?hl=nhspd).
+3. Trust locations - Trust locations are mapped via postcodes in the [Organisation Data Service](https://www.odsdatasearchandexport.nhs.uk/) and latlngs in the [NHS Postcode Directory](https://www.datadictionary.nhs.uk/supporting_information/nhs_postcode_directory.html?hl=nhspd).
 
 ## <a name="contribute">Health Warnings</a>
 
