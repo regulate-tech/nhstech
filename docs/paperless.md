@@ -35,7 +35,7 @@ Read our findings below - and get involved!
 
 ## <a name="analysis">See the analysis and raw data</a>
 
-If you just want the raw MRC data, you can [find it here](https://raw.githubusercontent.com/regulate-tech/nhstech/refs/heads/main/subject-mrc/data/output/trust_mrc_clean.csv).
+If you just want the raw combined medical records costs data, you can [find it here](https://raw.githubusercontent.com/regulate-tech/nhstech/refs/heads/main/subject-mrc/data/output/trust_mrc_clean.csv).
 
 Our notebooks show how we did this analysis:
 
