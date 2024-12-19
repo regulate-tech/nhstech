@@ -6,4 +6,6 @@ We are doing this work because we think that the technology people use when they
 
 We hope that some good analyses of what is already in use - the good, the bad and the ugly - will help improve decision-making and so move us towards this goal.
 
-The plan is to build code and content for this project between September and December 2024 for a launch in January 2025. Watch this space.
+We have been working on our initial project during November and December 2024. This is an analysis of spending by NHS Trusts in England on storing medical records - [read about it here](paperless.html).
+
+Our next release is planned for February 2025 when we will be sharing some tools that can help with understanding the structure of the health and care system.
