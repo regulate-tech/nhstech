@@ -29,13 +29,13 @@ Read our findings below - and get involved!
 
 <div class="flourish-embed flourish-table" data-src="visualisation/20545557"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20545557/thumbnail" width="100%" alt="table visualization" /></noscript></div>
 
-## <a name="map">See a map</a>
-
-Explore trusts on a map.
+## <a name="map">See trusts on a map</a>
  
 <div class="flourish-embed flourish-map" data-src="visualisation/20763444"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20763444/thumbnail" width="100%" alt="map visualization" /></noscript></div>
 
 ## <a name="analysis">See the analysis and raw data</a>
+
+If you just want the raw MRC data, you can [find it here](https://raw.githubusercontent.com/regulate-tech/nhstech/refs/heads/main/subject-mrc/data/output/trust_mrc_clean.csv).
 
 Our notebooks show how we did this analysis:
 
