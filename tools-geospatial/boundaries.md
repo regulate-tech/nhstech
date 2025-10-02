@@ -8,7 +8,7 @@ Fortunately, the Office for National Statistics (ONS) has a very good [Open Geog
 
 UK public services are frequently reorganised and the ONS usually provides data files in common geographical information system formats for any newly agreed sets of boundaries. 
 
-The ONS provides a [handy guide to UK geographies](https://geoportal.statistics.gov.uk/datasets/c0db0e8c67d04935bcf1749ca6027fef/about) that is worth reading as a primer.
+The ONS provides a [handy guide to UK geographies](https://geoportal.statistics.gov.uk/datasets/d1f39e20edb940d58307a54d6e1045cd/about) that is worth reading as a primer.
 
 There is [a section within the portal that lists all boundary datasets associated with health](https://geoportal.statistics.gov.uk/search?q=BDY_HLT) (161 of them as of Sept 2024).
 
