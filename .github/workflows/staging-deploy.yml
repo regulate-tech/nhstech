@@ -33,14 +33,16 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
+    # *** MODIFIED STEP 1: ADD working-directory ***
       - name: Install dependencies
+        working-directory: docs # <--- Tell Git to look inside 'docs'
         run: bundle install
 
-      # 2. Build Jekyll site
-      # CRITICAL: We pass the staging path as the baseurl here.
+      # *** MODIFIED STEP 2: ADD working-directory ***
       - name: Build Jekyll site for Staging
-        # The baseurl must match your repository name plus the subfolder: /nhstech/staging
-        run: bundle exec jekyll build --source docs --destination _site --baseurl /nhstech/staging
+        working-directory: docs # <--- Tell Git to look inside 'docs'
+        # The `--source` argument is now redundant but harmless since we're already in 'docs'
+        run: bundle exec jekyll build --destination ../_site --baseurl /nhstech/staging 
 
       # 3. Upload Artifact Job: Uploads the built site from the default Jekyll output folder (_site)
       - name: Upload artifact
