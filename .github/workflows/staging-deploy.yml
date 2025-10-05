@@ -30,7 +30,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.x' # Use a version compatible with your site
+          ruby-version: '3.3'
           bundler-cache: true
 
       - name: Install dependencies
