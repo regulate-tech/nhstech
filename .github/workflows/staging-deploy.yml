@@ -31,7 +31,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          gemfile-path: docs/Gemfile.lock 
+          working-directory: docs # <--- Tell Git to look inside 'docs' 
           bundler-cache: true
 
     # *** MODIFIED STEP 1: ADD working-directory ***
