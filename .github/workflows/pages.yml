@@ -34,22 +34,21 @@ jobs:
           bundle install --jobs 4
 
       - name: Build Jekyll (branch-aware)
-        run: |
-          if [ "${GITHUB_REF_NAME}" = "main" ]; then
-            echo "Building production"
-            bundle exec jekyll build --trace \
-              --source docs \
-              --destination docs/_site \
-              --config docs/_config.yml,docs/_config.prod.yml
-            echo "nhstech.uk" > docs/_site/CNAME
-          else
-            echo "Building staging"
-            bundle exec jekyll build --trace \
-              --source docs \
-              --destination docs/_site \
-              --config docs/_config.yml,docs/_config.staging.yml
-            echo "staging.nhstech.uk" > docs/_site/CNAME
-          fi
+      working-directory: docs
+      run: |
+        if [ "${GITHUB_REF_NAME}" = "main" ]; then
+          echo "Building production"
+          bundle exec jekyll build --trace \
+            --destination _site \
+            --config _config.yml,_config.prod.yml
+          echo "nhstech.uk" > _site/CNAME
+        else
+          echo "Building staging"
+          bundle exec jekyll build --trace \
+            --destination _site \
+            --config _config.yml,_config.staging.yml
+          echo "staging.nhstech.uk" > _site/CNAME
+        fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
