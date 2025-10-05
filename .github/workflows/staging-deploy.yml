@@ -1,0 +1,64 @@
+name: Deploy Staging Site
+
+on:
+  # This ensures the action ONLY runs when code is pushed to the 'staging' branch
+  push:
+    branches:
+      - staging
+  # Allows manual triggering from the Actions tab
+  workflow_dispatch:
+
+# Grant necessary permissions for deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # 1. Build Job: Builds the Jekyll static site
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # This step sets up Ruby and Jekyll dependencies
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.x' # Use a version compatible with your site
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: bundle install
+
+      # 2. Build Jekyll site
+      # CRITICAL: We pass the staging path as the baseurl here.
+      - name: Build Jekyll site for Staging
+        # The baseurl must match your repository name plus the subfolder: /nhstech/staging
+        run: bundle exec jekyll build --source docs --destination _site --baseurl /nhstech/staging
+
+      # 3. Upload Artifact Job: Uploads the built site from the default Jekyll output folder (_site)
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site' # Jekyll outputs the built site here
+
+  # 4. Deployment Job: Deploys the artifact to the 'staging' subfolder
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          # CRITICAL STEP: Deploy to the 'staging' path within GitHub Pages
+          target_path: staging
