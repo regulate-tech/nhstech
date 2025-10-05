@@ -1,2 +1,16 @@
-.ipynb_checkpoints
-subject-mrc/data/source/eric/
+# Jekyll/Build Output
+_site/
+docs/_site
+docs/jekyll-cache
+.jekyll-cache/
+
+# Bundler/Ruby Dependencies
+vendor/
+.bundle/
+docs/vendor
+docs/.bundle
+
+# Local Working & Cache Artifacts
+*~
+*.swp
+.sass-cache/
