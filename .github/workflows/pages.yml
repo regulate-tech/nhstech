@@ -1,8 +1,8 @@
-name: Deploy Jekyll (docs/) to GitHub Pages (main=prod, staging=staging)
+name: Deploy Jekyll (docs/) to GitHub Pages - Staging
 
 on:
   push:
-    branches: [ main, staging ]
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -27,28 +27,20 @@ jobs:
           bundler-cache: true
           working-directory: docs
 
-      - name: Install dependencies (docs/)
+      - name: Install dependencies
         working-directory: docs
         run: |
           bundle config set path 'vendor/bundle'
           bundle install --jobs 4
 
-      - name: Build Jekyll (branch-aware)
-      working-directory: docs
-      run: |
-        if [ "${GITHUB_REF_NAME}" = "main" ]; then
-          echo "Building production"
-          bundle exec jekyll build --trace \
-            --destination _site \
-            --config _config.yml,_config.prod.yml
-          echo "nhstech.uk" > _site/CNAME
-        else
-          echo "Building staging"
+      - name: Build Jekyll for staging
+        working-directory: docs
+        run: |
+          echo "Building staging site"
           bundle exec jekyll build --trace \
             --destination _site \
             --config _config.yml,_config.staging.yml
           echo "staging.nhstech.uk" > _site/CNAME
-        fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -58,10 +50,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    # Use your two environments so the deploy UI clearly separates them
     environment:
-      name: ${{ github.ref_name == 'main' && 'github-pages' || 'staging-pages' }}
-      url: ${{ github.ref_name == 'main' && 'https://nhstech.uk' || 'https://staging.nhstech.uk' }}
+      name: github-pages
+      url: https://staging.nhstech.uk
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
