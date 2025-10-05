@@ -3,7 +3,7 @@ layout: home
 title: NHSTech.uk
 ---
 
-> The technology people use when they engage with or work in health and care should be at least as good as the technology we use to share cat videos.
+> The technology we use when engaging with or working in health and care should be at least as good as the technology we use to share cat videos.
 
 
 This project set up by [RTFM Club](https://rtfmclub.com/) will map out information and communications technologies (ICTs) being used within the UK health and care sectors.
