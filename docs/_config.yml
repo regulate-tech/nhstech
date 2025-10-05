@@ -13,14 +13,14 @@ github_repo: regulate-tech/nhstech
 
 # BASEURL: Must match the repository name for Project Pages
 # This ensures that internal links start with /nhstech/
-baseurl: "/nhstech"
+# baseurl: "/nhstech"
 
 # URL: This is the host URL. Use your actual GitHub username/organization.
 url: "https://regulate-tech.github.io"
 
 # URL settings for GitHub Pages live
-# baseurl: ""  # Empty for custom domain
-# url: "https://nhstech.uk"
+baseurl: ""  # Empty for custom domain
+url: "https://nhstech.uk"
 
 # THEME: Use a theme supported by GitHub Pages
 theme: minima
