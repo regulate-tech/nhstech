@@ -1,0 +1,58 @@
+name: Deploy Jekyll (docs/) to GitHub Pages - Staging
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: docs
+
+      - name: Install dependencies
+        working-directory: docs
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4
+
+      - name: Build Jekyll for staging
+        working-directory: docs
+        run: |
+          echo "Building staging site"
+          bundle exec jekyll build --trace \
+            --destination _site \
+            --config _config.yml,_config.staging.yml
+          echo "staging.nhstech.uk" > _site/CNAME
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://staging.nhstech.uk
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
