@@ -33,14 +33,14 @@ jobs:
           bundle config set path 'vendor/bundle'
           bundle install --jobs 4
 
-      - name: Build Jekyll for staging
+      - name: Build Jekyll for production
         working-directory: docs
         run: |
-          echo "Building staging site"
+          echo "Building production site"
           bundle exec jekyll build --trace \
             --destination _site \
-            --config _config.yml,_config.staging.yml
-          echo "staging.nhstech.uk" > _site/CNAME
+            --config _config.yml
+          echo "nhstech.uk" > _site/CNAME
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: https://staging.nhstech.uk
+      url: https://nhstech.uk
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
