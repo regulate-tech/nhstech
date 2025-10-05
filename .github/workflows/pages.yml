@@ -1,4 +1,4 @@
-name: Deploy Jekyll (docs/) to GitHub Pages - Staging
+name: Deploy Jekyll (docs/) to GitHub Pages - Production
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
           echo "Building production site"
           bundle exec jekyll build --trace \
             --destination _site \
-            --config _config.yml
+            --config _config.yml,_config.prod.yml
           echo "nhstech.uk" > _site/CNAME
 
       - name: Upload Pages artifact
