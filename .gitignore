@@ -1,6 +1,7 @@
 # Jekyll/Build Output
 _site/
 docs/_site
+docs/CNAME
 docs/jekyll-cache
 .jekyll-cache/
 
