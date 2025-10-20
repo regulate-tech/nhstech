@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Comments on NHS Medical Records at HETT Show October 2025"
+date: 2025-10-07 12:00:00 +0100
+categories: jekyll github-pages
 ---
 
 I recognise that a lot of people here are going to be the professionals that actually do the hard work of dealing with the transition from paper to digital records.
@@ -15,7 +17,7 @@ The NHS is unusual. We are all of us, in this room and outside patients as we ac
 
 And I think that does give a special twist to the interests that we have. 
 
-We want the NHSís money, our money, to be spent on the things that will maximise patient outcomes for patient benefit. 
+We want the NHS‚Äôs money, our money, to be spent on the things that will maximise patient outcomes for patient benefit. 
 
 We are also aware that with the level of NHS resources it's hard to deliver even essential services. 
 
@@ -43,13 +45,13 @@ But there can also be indirect costs if the records are being stored but in orde
 
 So, as a patient-payer I want to maximise the direct and indirect benefits, and to minimise the direct and indirect costs. 
 
-Thinking now about professional biases, there is an old saying - ìif you've only got a hammer, everything looks like a nailî - that we should keep in mind.  We all have a tendency to look at things through our area of expertise.
+Thinking now about professional biases, there is an old saying - ‚Äúif you've only got a hammer, everything looks like a nail‚Äù - that we should keep in mind.  We all have a tendency to look at things through our area of expertise.
 
-I'm a geek and I look at everything through the lens of ìwhat kind of I.T system could I build to improve this thing?î 
+I'm a geek and I look at everything through the lens of ‚Äúwhat kind of I.T system could I build to improve this thing?‚Äù 
 
 But digitisation should never be seen as an end goal in and of itself. It is rather a means to a particular end, and in this case, that end is good health outcomes at the best possible cost.
 
-The digitisation is not the goal, however much I as a geek think that it is. So, what we often do in digital health is bring in clinicians to help out. And then we end up with something that's a bit better because the geeksí enthusiasm is tempered by the clinicians.
+The digitisation is not the goal, however much I as a geek think that it is. So, what we often do in digital health is bring in clinicians to help out. And then we end up with something that's a bit better because the geeks‚Äô enthusiasm is tempered by the clinicians.
 
 But the clinicians have their own hammer, as they naturally focus on the clinical treatments, and we may still need other tools for a complete solution. 
 
@@ -57,11 +59,11 @@ I would suggest that what's really important in the medical records management s
 
 By way of example, I am being treated for a foot fracture at the moment. 
 
-When I see them take an x-ray, my geek instinct is to think about ìhow technically might this be sent to my GP?î. Even if my GP likely has no need of the actual X-ray and would never look at it. 
+When I see them take an x-ray, my geek instinct is to think about ‚Äúhow technically might this be sent to my GP?‚Äù. Even if my GP likely has no need of the actual X-ray and would never look at it. 
 
-A clinician might say, ìwouldn't it be great to have lots of x-rays stored so that I can go back and look at them and do some research laterî. That would meet their perceived need even though again they might never actually look at the stored material.
+A clinician might say, ‚Äúwouldn't it be great to have lots of x-rays stored so that I can go back and look at them and do some research later‚Äù. That would meet their perceived need even though again they might never actually look at the stored material.
 
-A librarian would think ìhow do I create the most efficient coding possible that transmits what happened to the GP so they can easily retrieve facts about the treatment episode?î
+A librarian would think ‚Äúhow do I create the most efficient coding possible that transmits what happened to the GP so they can easily retrieve facts about the treatment episode?‚Äù
 
 For any particular use case, we need all of those lenses to be applied, recognising the biases, to come up with the right solution. 
 
@@ -69,37 +71,37 @@ As well as professional bias, we need to consider a key human bias. We have a te
 
 This is why Big Yellow storage units are a thriving business. They live from the fact that all of us, as humans, accumulate stuff and find it really difficult to get rid of stuff. 
 
-We pay to store that junk because we are convinced that somewhere in there is something that we may need at some time. And again you can see there's very much in the medical record space where we accumulate everything ìjust in caseî.
+We pay to store that junk because we are convinced that somewhere in there is something that we may need at some time. And again you can see there's very much in the medical record space where we accumulate everything ‚Äújust in case‚Äù.
 
-Iíve worked in Big Tech and I can tell you, it's the same there. Tech companies collect lots of data with the logic that somebody thinks it may be useful at some point, so we'll hang on to it. 
+I‚Äôve worked in Big Tech and I can tell you, it's the same there. Tech companies collect lots of data with the logic that somebody thinks it may be useful at some point, so we'll hang on to it. 
 
-And with due respect to AWS who are present here, there is a risk that AWS becomes the Big Yellow of digital where everyone pays for large storage buckets for stuff that they will never actually access. Thatís good for AWS, but not great for the taxpayer.
+And with due respect to AWS who are present here, there is a risk that AWS becomes the Big Yellow of digital where everyone pays for large storage buckets for stuff that they will never actually access. That‚Äôs good for AWS, but not great for the taxpayer.
 
 The last area of bias we need to think about is manager bias. This is not to say that managers are not humans or professionals. They are both, but they also have additional concerns around risk and accountability. 
 
 And this is really good because we want managers to worry about risk and accountability. But we need to recognise that these otherwise positive biases can sometimes cause inertia especially when the status quo is settled.
 
-So, if the budget for storing medical records in a particular way is not being challenged, then, for a manager, the question arises ìwhy follow the riskier path?î This is particularly true when you've got all sorts of other competing priorities going on. 
+So, if the budget for storing medical records in a particular way is not being challenged, then, for a manager, the question arises ‚Äúwhy follow the riskier path?‚Äù This is particularly true when you've got all sorts of other competing priorities going on. 
 
 This is why we did the project at NHSTech.uk looking at existing spending on paper records. We did that to challenge those status quo budgets and get people to ask questions about them.
 
-But we need to recognise that this is not an inherently bad bias. I want people who are managing things to think very carefully about risk and not jump too quickly, but we do still want them to jump when thereís a compelling case to do something.
+But we need to recognise that this is not an inherently bad bias. I want people who are managing things to think very carefully about risk and not jump too quickly, but we do still want them to jump when there‚Äôs a compelling case to do something.
 
-We also need to think about communicating around this kind of change and getting peopleís buy-in.
+We also need to think about communicating around this kind of change and getting people‚Äôs buy-in.
 
-We have a habit of going for simple slogans. The simple slogan is ìpaper-free NHSî. Itís such a good slogan that itís issued repeatedly every few years! We're told about another initiative that will make the NHS paper-free by year X. And here we are in 2025, and none of them have happened.
+We have a habit of going for simple slogans. The simple slogan is ‚Äúpaper-free NHS‚Äù. It‚Äôs such a good slogan that it‚Äôs issued repeatedly every few years! We're told about another initiative that will make the NHS paper-free by year X. And here we are in 2025, and none of them have happened.
 
 The reality is that we actually need a much more granular approach underneath the headline slogan. And we should be able to get the public behind the idea that we need a range of different treatments for different records.  
 
-In some cases this will be simple deletion ìwe've got storage areas full of records that nobody's used in 10 years and nobody is likely ever to use, and theyíre goingî. 
+In some cases this will be simple deletion ‚Äúwe've got storage areas full of records that nobody's used in 10 years and nobody is likely ever to use, and they‚Äôre going‚Äù. 
 
 In others, it will be expensive, manual hand coding of certain records that have to be individually reviewed. This is needed for records that are critical to someone's treatment.
 
-And there will be everything in between, from digitising and putting into cheap ìcoldî digital storage, through systems that allow for digitising, auto-encoding and connecting into an EHR. 
+And there will be everything in between, from digitising and putting into cheap ‚Äúcold‚Äù digital storage, through systems that allow for digitising, auto-encoding and connecting into an EHR. 
 
 We do then have all of those different treatments that I think are the solution that we actually need.  
 
-I will leave you with what I think is an appropriate Battle Cry. It's not - *ìWhat do we want? A paper-free NHS nowî*  - but rather - ***ìWhat do we want? An appropriate treatment of classes of different records to minimise the cost and maximise their usefulness?î***
+I will leave you with what I think is an appropriate Battle Cry. It's not - *‚ÄúWhat do we want? A paper-free NHS now‚Äù*  - but rather - ***‚ÄúWhat do we want? An appropriate treatment of classes of different records to minimise the cost and maximise their usefulness?‚Äù***
 
 Perhaps not quite as catchy, but I hope a reasonable framing for the discussions you're going to have over the next couple of days.
 
