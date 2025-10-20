@@ -1,5 +1,7 @@
-
-## Comments on NHS Medical Records at HETT Show October 2025
+---
+layout: post
+title: "Comments on NHS Medical Records at HETT Show October 2025"
+---
 
 I recognise that a lot of people here are going to be the professionals that actually do the hard work of dealing with the transition from paper to digital records.
 
