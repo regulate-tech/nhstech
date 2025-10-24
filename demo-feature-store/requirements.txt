@@ -1,0 +1,14 @@
+# Install all the required modules with "pip install -r requirements.txt"
+
+# -- Main Application --
+flask         # The web server
+joblib        # For saving/loading the model
+
+# -- Data & ML --
+pandas        # For data manipulation
+scikit-learn  # For the machine learning model
+
+# -- Feature Store --
+feast         # The feature store
+numpy         # Required for scikit-learn and pandas
+faker         # For generating synthetic data

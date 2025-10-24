@@ -1,0 +1,8 @@
+project: nhs_risk_calculator
+registry: data/registry.db
+provider: local
+online_store:
+    type: sqlite
+    path: data/online_store.db  # Feast will create this file
+offline_store:
+    type: file  # This means use the FileSource (Parquet) defined in our .py
