@@ -11,6 +11,14 @@ vendor/
 docs/vendor
 docs/.bundle
 
+# Python virtual environment
+.venv/
+_pycache_/
+
+# Data Files
+*.db
+*.parquet
+
 # Local Working & Cache Artifacts
 *~
 *.swp
