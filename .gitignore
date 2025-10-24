@@ -13,7 +13,7 @@ docs/.bundle
 
 # Python virtual environment
 .venv/
-_pycache_/
+__pycache__/
 
 # Data Files
 *.db
