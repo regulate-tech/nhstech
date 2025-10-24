@@ -20,12 +20,12 @@ The application demonstrates the full MLOps loop, from data generation to real-t
 
 ```mermaid
 flowchart TD
-    subgraph DataEngineering["1. Data Engineering (lib.py / generate_data.py)"]
+    subgraph DataEngineering["1. Data Engineering (lib.py-generate_data.py)"]
         A["Add New Patients"] -- "Appends to" --> B(Offline Store patient_gp_data.parquet)
         B -- "feast materialize" --> C(Online Store online_store.db_)
     end
 
-    subgraph DataScience["2. Data Science (lib.py / train_model.py)"]
+    subgraph DataScience["2. Data Science (lib.py-train_model.py)"]
         B -- "get_historical_features" --> D["Train New Model (train_and_save_model)"]
         D -- "Saves" --> E("Risk Model diabetes_model.pkl")
     end
