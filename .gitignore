@@ -18,3 +18,10 @@ docs/.bundle
 
 # Visual Studio working files
 .vs
+
+# Data files
+.db
+.parquet
+/demo-feature-store/nhs_risk_calculator/data/online_store.db
+/demo-feature-store/nhs_risk_calculator/data/patient_gp_data.parquet
+/demo-feature-store/nhs_risk_calculator/data/registry.db
