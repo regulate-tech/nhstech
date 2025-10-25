@@ -206,6 +206,6 @@ You just experienced the core principle of modern data systems (often called "ML
 
 If you're curious, here are a few resources to explore these concepts further.
 
-  * **What is a Feature Store? (A Simple Explanation):** [A non-technical blog post on the "central kitchen" idea](https://www.google.com/search?q=https://www.tecton.ai/what-is-a-feature-store/).
-  * **What is MLOps? (For Non-Technical People):** [An article explaining the ideas behind managing the full lifecycle of AI models](https://www.google.com/search?q=https://www.datarobot.com/blog/what-is-mlops-for-non-technical-people/).
+  * **What is a Feature Store?:** [A technical blog post describing what goes into a feature store" idea](https://www.tecton.ai/what-is-a-feature-store/).
+  * **What is MLOps?:** [An explainer from IBM of the ideas behind managing the full lifecycle of AI models](https://www.ibm.com/think/topics/mlops).
   * **Feast (The Tool Used in this Demo):** [The official website for the open-source Feature Store technology used in this tutorial](https://feast.dev/).
