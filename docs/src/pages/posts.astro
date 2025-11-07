@@ -5,6 +5,11 @@ import Footer from '../components/Footer.astro'
 import { getCollection } from 'astro:content'
 
 const posts = await getCollection('posts')
+posts.sort((a, b) => {
+  if (a.data.pubDate > b.data.pubDate) return -1
+  if (a.data.pubDate < b.data.pubDate) return 1
+  return 0
+})
 ---
 <Layout>
   <Header />
