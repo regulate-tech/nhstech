@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { getCollection } from 'astro:content'
+
+const posts = await getCollection('posts')
+---
+<Layout>
+  <Header />
+  <main class="max-w-3xl mx-auto px-8 sm:px-12 pt-10 pb-4 border border-zinc-200 bg-white">
+    <h1 class="text-3xl font-bold pb-8">News</h1>
+    <ul>
+      {posts.map(post => (
+        <li class="pb-8">
+          <article>
+            <h2>
+              <a class="text-xl hover:underline underline-offset-2 text-nhs-bright-blue font-bold" href={`/${post.id}`}>{post.data.title}</a>
+            </h2>
+<time class="text-base font-mono text-zinc-400" datetime={post.data.pubDate}>{post.data.pubDate}</time>
+          </article>
+        </li>
+      ))}
+    </ul>
+  </main>
+  <Footer />
+</Layout>

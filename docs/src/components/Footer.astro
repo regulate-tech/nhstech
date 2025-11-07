@@ -1,0 +1,13 @@
+---
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+dayjs.extend(utc);
+
+const lastMod = Astro.props.lastModified ?? Astro.props.frontmatter?.lastModified
+---
+<footer class="text-sm py-6 max-w-3xl mx-auto px-8 sm:px-12 text-zinc-400 leading-9 text-center">
+  <p>
+    <span>Last updated {lastMod ?? dayjs().utc(lastMod).format("YYYY-MM-DD")}</span>
+    <span class="px-4 hidden sm:inline">⁂</span>
+    <a class="hover:underline hover:text-nhs-blue underline-offset-2 block sm:inline" href="https://github.com/regulate-tech/nhstech">View source on github.com</a></p>
+</footer>

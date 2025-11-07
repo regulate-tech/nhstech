@@ -1,0 +1,19 @@
+---
+import '../styles/global.css'
+import { Font } from 'astro:assets';
+---
+<!doctype html>
+<html lang="en" class={Astro.props.htmlClass ?? ''}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🟦</text></svg>">
+		<title>NHS TECH</title>
+		<meta name="description" content="Tools to understand the health and care system" />
+		<Font cssVariable='--font-inter' preload />
+		<Font cssVariable='--font-courier-prime' preload />
+	</head>
+	<body class="bg-nhs-pale-grey">
+		<slot />
+	</body>
+</html>

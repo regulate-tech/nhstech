@@ -3,7 +3,9 @@ layout: default
 title: code
 ---
 
-An evergreen list of useful collections of code in the UK health and care system.
+# Code
+
+_Useful collections of code in the UK health and care system._
 
 ## NHS.UK
 
