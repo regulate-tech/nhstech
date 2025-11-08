@@ -1,8 +1,6 @@
 ---
-layout: post
-title: "Comments on NHS Medical Records at HETT Show October 2025"
-date: 2025-10-07 12:00:00 +0100
-categories: jekyll github-pages
+title: "Comments on NHS Medical Records at HETT Show Oct 2025"
+author: Richard Allan
 ---
 
 I recognise that a lot of people here are going to be the professionals that actually do the hard work of dealing with the transition from paper to digital records.

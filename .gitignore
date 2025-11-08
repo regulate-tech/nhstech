@@ -1,16 +1,3 @@
-# Jekyll/Build Output
-_site/
-docs/_site
-docs/CNAME
-docs/jekyll-cache
-.jekyll-cache/
-
-# Bundler/Ruby Dependencies
-vendor/
-.bundle/
-docs/vendor
-docs/.bundle
-
 # Python virtual environment
 .venv/
 __pycache__/

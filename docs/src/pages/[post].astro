@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/default.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map(post => ({
+    params: { post: post.id },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout>
+  <h1>{post.data.title}</h1>
+  <time class="text-base font-mono text-zinc-400 -mt-6 block" datetime={post.data.pubDate}>{post.data.pubDate}</time>
+  <Content />
+</Layout>

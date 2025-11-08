@@ -1,4 +1,4 @@
-name: Deploy Jekyll (docs/) to GitHub Pages - Production
+name: Deploy Website
 
 on:
   push:
@@ -20,39 +20,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup node.js
+        uses: actions/setup-node@v6
         with:
-          ruby-version: '3.2'
-          bundler-cache: true
-          working-directory: docs
+          node-version: '24'
 
       - name: Install dependencies
         working-directory: docs
-        run: |
-          bundle config set path 'vendor/bundle'
-          bundle install --jobs 4
+        run: npm ci
 
-      - name: Build Jekyll for production
+      - name: Build Website
         working-directory: docs
-        run: |
-          echo "Building production site"
-          bundle exec jekyll build --trace \
-            --destination _site \
-            --config _config.yml,_config.prod.yml
-          echo "nhstech.uk" > _site/CNAME
+        run: npm run build
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload static files as artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: docs/_site
+          path: docs/dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: https://nhstech.uk
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

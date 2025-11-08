@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-nhs-blue: #005EB8;
+  --color-nhs-dark-blue: #003087;
+  --color-nhs-bright-blue: #0072CE;
+  --color-nhs-yellow: #FAE100;
+  --color-nhs-warm-yellow: #FFB81C;
+  --color-nhs-orange: #ED8B00;
+  --color-nhs-emergency-red: #DA291C;
+  --color-nhs-dark-red: #8A1538;
+  --color-nhs-pale-grey: #E8EDEE;
+  --color-nhs-mid-grey: #768692;
+  --color-nhs-dark-grey: #425563;
+  --color-nhs-black: #231f20;
+}
+
+@theme inline {
+  --font-mono: var(--font-courier-prime);
+  --font-sans: var(--font-inter);
+}
+
+@utility prose {
+  --tw-prose-body: var(--color-nhs-black);
+  --tw-prose-links: var(--color-nhs-blue);
+  --tw-prose-quotes: var(--color-nhs-bright-blue);
+  --tw-prose-quote-borders: var(--color-nhs-bright-blue);
+  blockquote {
+    font-style: normal;
+    /* Disable adding quote marks to block-quotes: https://github.com/tailwindlabs/tailwindcss-typography/issues/66 */
+    p {
+      &:first-of-type::before,
+      &:last-of-type::after {
+        content: none;
+      }
+    }
+  }
+  p > code, p > kbd {
+    font-size: smaller;
+    vertical-align: 1px;
+    @apply px-2 py-0.5 rounded bg-zinc-200;
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+  a {
+    text-underline-offset: .2rem;
+  }
+  h1, h2, h3, h4 {
+    &:not(:first-child) {
+      margin-top:1.4em;
+    }
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+}
+
+.prose > blockquote:first-child > p:first-child {
+  margin-top:0;
+}

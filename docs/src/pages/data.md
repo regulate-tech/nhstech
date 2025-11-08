@@ -3,7 +3,9 @@ layout: default
 title: data
 ---
 
-An evergreen list of useful collections of data in the UK health and care system.
+# Data
+
+_Useful sources of data on the UK health and care system._
 
 ## NHS Data Model and Dictionary
 
