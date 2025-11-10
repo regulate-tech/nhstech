@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Paperless NHS
+slug: paperless.html
 ---
 
 The NHS has committed to replacing paper medical records with digital records several times, but this has not happened.

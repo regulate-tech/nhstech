@@ -6,11 +6,18 @@ const posts = defineCollection({
     base: 'posts',
     pattern: '**/*.md',
     generateId: ({entry, data}) => {
-      const id = entry.slice(11, -3)
-      const pubDate = data.pubDate ?? entry.slice(0, 10)
-      // Note: mutating the data obj. serves them right for passing it in unfrozen.
-      data.pubDate = pubDate
-      return id
+      // Note: jekyll pulls the pubDate and the slug from filename,
+      // so we recreate that here by adding the pubDate where unset
+      if (!data.pubDate) {
+        // first 10 chars should be a hyphenated ISO8601 date.
+        data.pubDate = entry.slice(0, 10)
+      }
+      if (data.slug && typeof data.slug === 'string') {
+        // use the `slug` prop from the frontmatter if specified.
+        return data.slug
+      }
+      // chars after the iso date are teh slug, minus the `.md` suffix
+      return entry.slice(11, -3)
     }
   }),
   schema: z.object({
